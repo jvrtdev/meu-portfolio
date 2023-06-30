@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <header id="cabecalho"> 
+        <nav class="nav-area">
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/jvrtdev/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" id="linkedin"></i></a></li>
+                <li><a href="https://github.com/jvrtdev" target="_blank"><i class="fa-brands fa-github fa-2xl" id="github"></i></a></li>
+                <li><a href="../download/curriculo-joao-romano.pdf" target="_blank"><i class="fa-solid fa-file fa-2xl" id="curriculo"></i></a></li>
+            </ul>
+            <ul class="menu-items">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html/#projetos">Projetos</a></li>
+                <li><a href="paginas/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="area-form">
+        <div class="container-fluid">
+            <form action="https://api.staticforms.xyz/submit" method="POST" id="myForm">
+                <div class="mb3">
+                    <input type="hidden" name="accessKey" value="d4a26473-fb21-4f1b-9926-9cf54d1c2686"> <!--input que puxa a chave de acesso-->
+                    <input type="hidden" name="redirectTo" value="https://portfoliojvrtdev.netlify.app/index.html"> <!-- Optional -->
+                </div>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" name="name" id="nome" aria-describedby="helpId" placeholder="Digite o seu nome" maxlength="50" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="abc@email.com" required>
+                    <small id="emailHelpId" class="form-text text-muted">Digite o seu email</small>
+                </div>
+                <div class="mb-3">
+                    <label for="msg" class="form-label">Sua mensagem</label>
+                    <textarea class="form-control" name="message" id="msg" rows="6" placeholder="Digite a sua mensagem..." required maxlength="100"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+            </form>
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
